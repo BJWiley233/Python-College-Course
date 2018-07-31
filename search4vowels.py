@@ -75,7 +75,7 @@ print(search4vowels_withoutFound('wordsWithMoreThanOne+CASE'))
 if __name__=='__main__':
     from timeit import Timer
     t = Timer(lambda: search4vowels_withoutFound('python is great'))
-    print(t.timeit(number=10000))
+    print(t.timeit(number=100))
    
 # function which includes letters to search for.    
 def search4letters(phrase:str, letters = 'aeiou') -> set:
